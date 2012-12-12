@@ -7,9 +7,6 @@ module HAPS
         def on_data(connection); raise NotImplementedError; end
         def at_exit; end
       end
-
-      autoload :LoggerListener, 'haps/server/listeners/logger_listener'
-      autoload :RedisListener, 'haps/server/listeners/redis_listener'
     end
   end
 end

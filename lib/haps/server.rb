@@ -1,10 +1,9 @@
 require 'eventmachine'
 require 'haps/server/connection'
+require 'haps/server/listeners'
 
 module HAPS
   module Server
-    autoload :Listeners, 'haps/server/listeners'
-
     extend self
     extend Configurable
 
